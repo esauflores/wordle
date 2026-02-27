@@ -1,7 +1,12 @@
+import Guesses from "./Guesses"
+import Keyboard from "./Keyboard"
+
 const App: React.FC = () => {
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>Wordlish</h1>
+      <Guesses />
+      <Keyboard />
     </>
   )
 }
