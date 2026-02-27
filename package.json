@@ -1,0 +1,30 @@
+{
+  "name": "hs-react-408",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "npm run lint-typecheck && npm run lint-eslint && npm run lint-prettier && npm run lint-depcheck",
+    "lint-typecheck": "tsc --noEmit",
+    "lint-eslint": "eslint .",
+    "lint-prettier": "prettier --check .",
+    "lint-depcheck": "depcheck .",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@christopherjbaker/eslint-config": "^3.1.4",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "depcheck": "^1.4.7",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
+  }
+}
