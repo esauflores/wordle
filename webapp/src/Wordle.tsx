@@ -29,15 +29,21 @@ function Wordle(): JSX.Element {
         }
 
         if (!isValidWordleGuess(currentGuess)) {
-          toast('Not in word list')
+          toast(`Word '${currentGuess.toUpperCase()}' is not in the word list`)
           return
         }
 
-        setGameState(makeWordleGuess(gameState, currentGuess))
+        const newGameState = makeWordleGuess(gameState, currentGuess)
+
+        setGameState(newGameState)
         setCurrentGuess('')
 
-        if (makeWordleGuess(gameState, currentGuess).isWin) {
+        if (newGameState.isWin) {
           toast('Congratulations! You guessed the word!')
+        }
+
+        if (newGameState.isGameOver && !newGameState.isWin) {
+          toast(`Game over! The word was "${newGameState.word.toUpperCase()}"`)
         }
 
         return
