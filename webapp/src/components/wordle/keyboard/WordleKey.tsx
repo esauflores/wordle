@@ -23,7 +23,7 @@ const WordleKey: React.FC<WordleKeyProps> = ({ label, state, wide = false, onCli
         'h-14 select-none cursor-pointer transition-colors',
         'bg-secondary text-secondary-foreground border border-transparent',
         'text-white border-transparent',
-        wide ? 'w-16' : 'w-10',
+        wide ? 'w-12 sm:w-16' : 'w-7.5 sm:w-10',
         state && stateStyles[state],
       )}
     >

@@ -10,9 +10,9 @@ const KEYBOARD_ROWS = [
 
 const WordleKeyboard: React.FC<WordleKeyboardProps> = ({ keyboard, onKey }) => {
   return (
-    <div className="flex flex-col items-center gap-1">
+    <div className="flex flex-col items-center gap-2 sm:gap-1">
       {KEYBOARD_ROWS.map((row, rowIndex) => (
-        <div key={rowIndex} className="flex gap-1">
+        <div key={rowIndex} className="flex gap-1.5 sm:gap-1">
           {row.map((key) => (
             <WordleKey
               key={key}

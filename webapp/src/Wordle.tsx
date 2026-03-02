@@ -74,9 +74,14 @@ function Wordle(): JSX.Element {
   }, [handleKey])
 
   return (
-    <div className="bg-[#121213] flex flex-col items-center justify-between min-h-screen py-8">
-      <WordleBoard gameState={gameState} currentGuess={currentGuess} />
-      <WordleKeyboard keyboard={getWordleKeyboardState(gameState)} onKey={handleKey} />
+    <div className="bg-[#121213] flex flex-col items-center justify-between sm:justify-center h-dvh overflow-hidden">
+      <div className="mb-4 sm:mb-6 flex flex-col items-center">
+        <h1 className="text-4xl font-bold text-white my-4">Wordle</h1>
+        <WordleBoard gameState={gameState} currentGuess={currentGuess} />
+      </div>
+      <div className="mb-2 sm:mb-6">
+        <WordleKeyboard keyboard={getWordleKeyboardState(gameState)} onKey={handleKey} />
+      </div>
     </div>
   )
 }
