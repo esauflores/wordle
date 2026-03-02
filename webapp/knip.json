@@ -1,0 +1,11 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "tags": ["-lintignore"],
+  "ignoreDependencies": [
+    "@base-ui/react",
+    "@hookform/resolvers",
+    "class-variance-authority",
+    "radix-ui",
+    "react-hook-form"
+  ]
+}
