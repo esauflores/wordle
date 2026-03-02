@@ -4,6 +4,12 @@ A Wordle clone built with Vite, React and TypeScript.
 
 Developed as a project for React Course.
 
+🌐 **[Live](https://wordle.esauflores.com/)**
+
+📚 **[Documentation](https://outline.fastwaydata.com/s/104f9c10-354a-4540-a4b7-71b3587ca0e6/doc/overview-Qfb02p81io)**
+
+🐙 **[GitHub](https://github.com/esauflores/wordle)**
+
 The game logic was taken from [hs-react-408](https://github.com/christopherjbaker/hs-react-408); Remixed and extended with feature-based architecture.
 
 ## Architecture
