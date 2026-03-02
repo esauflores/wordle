@@ -76,7 +76,8 @@ function Wordle(): JSX.Element {
   return (
     <div className="bg-[#121213] flex flex-col items-center justify-between sm:justify-center h-dvh overflow-hidden">
       <div className="mb-4 sm:mb-6 flex flex-col items-center">
-        <h1 className="text-4xl font-bold text-white my-4">Wordle</h1>
+        <h1 className="text-4xl font-bold text-white mt-2 sm:mt-4">Wordle</h1>
+        <h2 className="text-sm text-gray-400 mb-4"><a href="https://github.com/esauflores" className="underline">@esauflores</a></h2>
         <WordleBoard gameState={gameState} currentGuess={currentGuess} />
       </div>
       <div className="mb-2 sm:mb-6">

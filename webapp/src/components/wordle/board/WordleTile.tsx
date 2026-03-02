@@ -19,7 +19,7 @@ const WordleTile: React.FC<WordleTileProps> = ({ letter, state = 'unknown' }) =>
     <div
       className={cn(
         'flex items-center justify-center',
-        'w-13 h-13 border-2',
+        'w-14 sm:w-13 h-14 sm:h-13 border-2',
         'text-2xl font-bold uppercase',
         stateStyles[state],
         letter && state === 'unknown' && 'border-[#565758]',
