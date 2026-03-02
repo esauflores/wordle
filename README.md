@@ -4,6 +4,8 @@ This repository is an implementation of **Wordle**.
 
 It currently contains a web app built with Vite, React, and TypeScript.
 
+🌐 **[Live](https://wordle.esauflores.com/)**
+
 ## Project Structure
 
 ```text
