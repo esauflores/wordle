@@ -58,6 +58,7 @@ Creates a fresh game state. The target word is derived deterministically from th
 **`makeWordleGuess(gameState, guess)`**
 
 Takes the current state and a guess string, returns a new state with the guess evaluated. Does not mutate the input state. The evaluation follows Wordle's rules:
+
 1. Letters in the correct position → `correct`
 2. Letters present in the word but wrong position → `present` (respects letter count to avoid false positives)
 3. All other letters → `absent`
@@ -65,6 +66,7 @@ Takes the current state and a guess string, returns a new state with the guess e
 **`getWordleKeyboardState(gameState)`**
 
 Generates the keyboard state for the on-screen keyboard based on all past guesses following Wordle's rules:
+
 1. If any guess has a letter in the correct position → `correct`
 2. Else if any guess has the letter present but wrong position → `present`
 3. Else if any guess has the letter absent → `absent`
