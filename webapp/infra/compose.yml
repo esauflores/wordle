@@ -3,6 +3,8 @@ services:
     build:
       context: ..
       dockerfile: infra/Dockerfile
+    expose:
+      - "80"
     healthcheck:
       test: ['CMD', 'curl', '-f', 'http://localhost/']
       interval: 30s
