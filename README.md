@@ -3,7 +3,7 @@
 A Wordle clone built with Vite, React, and TypeScript.
 
 <p align="center">
-  <img src="screenshot.png" alt="Wordle Screenshot" width="400">
+  <img src="screenshot.png" alt="Wordle Screenshot" width="700">
 </p>
 
 🌐 **[Live](https://wordle.esauflores.com/)**
