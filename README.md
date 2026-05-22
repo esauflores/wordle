@@ -1,10 +1,34 @@
 # Wordle
 
-This repository is an implementation of **Wordle**.
+A Wordle clone built with Vite, React, and TypeScript.
 
-It currently contains a web app built with Vite, React, and TypeScript.
+<p align="center">
+  <img src="screenshot.png" alt="Wordle Screenshot" width="400">
+</p>
 
 🌐 **[Live](https://wordle.esauflores.com/)**
+
+## Tech Stack
+
+- [Vite](https://vitejs.dev/) — Build tool
+- [React 19](https://react.dev/) — UI library
+- [TypeScript](https://www.typescriptlang.org/) — Type safety
+- [Tailwind CSS](https://tailwindcss.com/) — Styling
+
+## Getting Started
+
+```bash
+cd webapp
+pnpm install
+pnpm run dev
+```
+
+## Docker
+
+```bash
+cd webapp/infra
+docker compose up
+```
 
 ## Project Structure
 
@@ -12,10 +36,6 @@ It currently contains a web app built with Vite, React, and TypeScript.
 wordle/
 └── webapp/          # Wordle web application
 ```
-
-## Web App
-
-The Wordle application source code lives in `webapp/`.
 
 See [webapp/README.md](webapp/README.md) for full details, including:
 
